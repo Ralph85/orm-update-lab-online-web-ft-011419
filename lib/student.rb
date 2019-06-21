@@ -34,9 +34,9 @@ require_relative "../config/environment.rb"
   end
 
   def self.new_from_db(id, grade, name)
-    student_id = row[0]
-    student_name = row[1]
-    student_grade = row[2]
+    id = new.Student.row[0]
+    name = new.Student.row[1]
+    grade = new.Student.row[2]
   end
 
   def self.find_by_name(name)
