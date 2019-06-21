@@ -35,7 +35,7 @@ require_relative "../config/environment.rb"
 
   def self.new_from_db(id, grade, name)
     id = Student.new.row[0]
-    name  =Student.new.row[1]
+    name  = Student.new.row[1]
     grade = Student.new.row[2]
   end
 
